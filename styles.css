@@ -1,0 +1,175 @@
+:root {
+  --red: rgb(193, 67, 50);
+  --black: rgb(46, 48, 63);
+  --black-opacity: rgba(46, 48, 63, 0.89);
+  --green: rgb(99, 148, 140);
+  --darkGreen: rgb(63, 105, 98);
+  --white: rgb(235, 230, 209);
+  --red-opacity: rgba(193, 67, 50, 0.904);
+  --white-opacity: rgba(235, 230, 209, 0.801);
+  --raleway: 'Raleway';
+  --openSans: 'Open Sans';
+
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--raleway);
+}
+
+p {
+  font-family: var(--openSans);
+  font-weight: 400;
+  color: var(--black-opacity);
+  font-size: 0.99rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.container {
+  background-image: url('../images/coffee-beans.jpg');
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  width: 90%;
+  height: 90%;
+  background-color: var(--white-opacity);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  width: 58%;
+  right: 0;
+  top: 27%;
+  z-index: 10;
+  animation: moveInLeft 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateX(8px);
+  }
+
+  90% {
+    opacity: 0.9;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title h1 {
+  background-color: var(--red-opacity);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 41px 0px rgba(189, 189, 189, 1);
+  -moz-box-shadow: 0px 0px 41px 0px rgba(189, 189, 189, 1);
+  box-shadow: 0px 0px 41px 0px rgba(189, 189, 189, 1);
+}
+
+.title h1:last-child {
+  float: right;
+  text-align: center;
+  width: 80%;
+  margin-top: 10px;
+  animation: moveInLeft 1.3s ease-out;
+}
+
+.town-name {
+  font-weight: 700;
+}
+
+.home-left {
+  background-image: url('../images/map-lg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.home-left img {
+  height: 3rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.quote p {
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--black-opacity);
+}
+
+.intro {
+  padding: 0 50px;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button.begin {
+  margin-top: -40px;
+  letter-spacing: 0.3rem;
+  font-family: var(--openSans);
+}
+
+.button:link,
+.button:visited {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: var(--red);
+  font-family: var(--openSans);
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--green);
+  font-weight: 700;
+  transition: all 0.3s ease-out;
+  border-radius: 50px;
+  border: none;
+}
+
+.button:active {
+  letter-spacing: 1.2rem;
+}
