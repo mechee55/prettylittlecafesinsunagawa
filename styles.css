@@ -33,7 +33,7 @@ p {
 }
 
 .container {
-  background-image: url('../images/coffee-beans.jpg');
+  background-image: url('/images/coffee-beans.jpg');
   height: 100%;
   background-size: cover;
   display: flex;
@@ -105,10 +105,10 @@ p {
 }
 
 .home-left {
-  background-image: url('../images/map-lg.jpg');
+  background-image: url('/images/map-lg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   width: 50%;
   height: 100%;
   position: relative;
